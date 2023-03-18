@@ -84,7 +84,7 @@ public class FileManager {
         if(f1.isDirectory()){
             try{
                 fileops.copyCutDir(f1, f2, command);
-                if("move".equals(command)){
+                if("move".equals(command)){ //I feel like this should be the other way
                     console.sendMessage("Moving is successfuly finished.");
                 } else {
                     console.sendMessage("Copying is successfuly finished.");
